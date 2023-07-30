@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(demon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+    margin-right: 64%;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #02ffe6;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 300px;
+    position: absolute;
+    top: 200px;
+    left: 780px;
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    font-size: 70px;
+    width: auto;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #009866;
+    border-radius: 25px;
+    color: white;
+    width: 80%;
+    height: 40px;
+    margin-top: 12px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #009688;
+}
+
+button:hover {
+    border: none;
+}
